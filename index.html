@@ -72,6 +72,24 @@
         </ul>
     </div>
 
+    <script>
 
+        let lion = document.querySelector('span');
+        let List = document.querySelector('ul');
+
+        lion.addEventListener('click', () =>{
+
+            List.classList.toggle('gorunur')
+        })
+
+        window.addEventListener('resize', () =>{
+            if(window.innerWidth > 1000){
+                List.classList.remove('gorunur');
+            }
+            
+        })
+
+
+    </script>
 </body>
 </html>
